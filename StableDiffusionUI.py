@@ -1,5 +1,4 @@
-
-import torch,os,time,requests,sys,functools,IPython
+import torch,os,time,sys
 import gradio as gr
 from torch import autocast
 from diffusers import StableDiffusionPipeline
@@ -46,7 +45,7 @@ inputs = [
     "checkbox","checkbox","checkbox","checkbox", gr.Image(type="filepath", value="a.jpg")
 ]
 
-def work(pr,steps,guidance,seed,strength,s1,s2,s3,sch,lr,uim,hlf,inm):  #url = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh6.googleusercontent.com%2Fproxy%2FQBZTSycU3BmNf_YnyU4vm7Ammqx-aKnQcXSr_mD5xn28buzYMdg4G4NZOoxF8-hhW-a_HenRvkeiOnwnRw4Ll0TYjcs9HehMcoFWWsCpqA5BKAQCOUeJ5yd2eXnIlcxd_F6n7dugodr4GuwtI7aNtIqETNci0EFPeyc6sgVUx4f_1wHb_RwEXRGTxbc3L5jqYbde-ArPVo4_HRuJPBhmq-hJ86M4%3Dw1200-h630-p-k-no-nu&f=1&nofb=1"#response = requests.get(url)#BytesIO(response.content)
+def work(pr,steps,guidance,seed,strength,s1,s2,s3,sch,lr,uim,hlf,inm):  
     if s1>s2:
         s2=s1+0.006
     
@@ -54,9 +53,6 @@ def work(pr,steps,guidance,seed,strength,s1,s2,s3,sch,lr,uim,hlf,inm):  #url = "
         newpipe(**locals())
 
     dr = "c:\\i"#\\"+pr.replace(' ','_'); 
-
-    #if not os.path.exists(dr):
-    #    os.makedirs(dr)
 
     fname = "c:\i\\"+pr.replace(' ','_')+str(seed)+'_'+str(guidance)+'_'+str(steps)+".jpg"
 
