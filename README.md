@@ -26,6 +26,6 @@ it will start local webserver ans show on which port
 
 open browser http://localhost:shown_port to see html based gui
 
-upscale results manually with qualityscaller ai upscaller for example install qualityscalle from github
+upscale results manually with  ai upscaller for example install qualityscaler from github
 realsr_jpeg results there are superior to blury bsrgan
 
