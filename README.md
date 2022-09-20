@@ -1,6 +1,6 @@
 # StableDiffusionUi
 
-Simple Stable Diffusion UI with a lot of sliders to findout which params and values influence output image content and how.
+Simple Stable Diffusion UI with as little dependencies as possible. And with a lot of sliders to findout which params and values influence output image content and how. sadly only 2 shedulers so far but only relevant third one is euler_a anyway. will add soon
 
 install python 3.10.7
 install cudatoolkit 11.7 . I  got twice the speed on 3080 compared to 11.6 11 it/s compared to 6 bot only on windows linux was half of the speed . win drivers are 516 linux is stuck on 515 perhaps thats why
