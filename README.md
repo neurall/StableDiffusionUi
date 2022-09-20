@@ -3,6 +3,7 @@
 Simple Stable Diffusion UI with a lot of sliders to findout which params and values influence output image content and how.
 
 install python 3.10.7
+install cudatoolkit 11.7 . I  got twice the speed on 3080 compared to 11.6 11 it/s compared to 6 bot only on windows linux was half of the speed . win drivers are 516 linux is stuck on 515 perhaps thats why
 
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117 <br>
 
