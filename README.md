@@ -3,7 +3,7 @@
 Simple Stable Diffusion UI with as little dependencies as possible. And with a lot of sliders to findout which params and values influence output image content and how. sadly only 2 shedulers so far but only relevant third one is euler_a anyway. will add soon
 
 install python 3.10.7
-install cudatoolkit 11.7 . I  got twice the speed on 3080 compared to 11.6 11 it/s compared to 6 bot only on windows linux was half of the speed . win drivers are 516 linux is stuck on 515 perhaps thats why
+install cudatoolkit 11.7 . I  got twice the speed on 3080 compared to 11.6 11 it/s compared to 6 bot only on windows linux was half of the speed . win drivers are 516 linux is stuck on 515 perhaps thats why. also on linux i get onstant out of memory failures in 32bit float on windows not. what is strange xorg was taking 177m vram and windows 210m but windows cura did not complained in 32bit and got no out of memory on 3080 so windows is much better testbed right now which is weird. 
 
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117 <br>
 
